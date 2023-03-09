@@ -25,7 +25,7 @@ module Git
     #   the git command, status, stdout, and stderr
     #
     def initialize(result)
-      super("#{result.git_cmd}\nstatus: #{result.status}\nstderr: #{result.stderr.inspect}")
+      super("#{result.git_cmd}\nstatus: #{result.status}\nstderr: #{result.stderr.inspect}\nstdout: #{result.stdout.inspect}")
       @result = result
     end
 
